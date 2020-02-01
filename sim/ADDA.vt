@@ -1,0 +1,73 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "01/31/2020 23:55:00"
+                                                                                
+// Verilog Test Bench template for design : ADDA
+// 
+// Simulation tool : ModelSim (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module ADDAtest();
+// constants                                           
+// general purpose registers
+// test vector input registers
+reg [15:0] treg_adcdata;
+reg command;
+reg drdy_n;
+reg i_rest_n;
+reg sysclk_50;
+// wires                                               
+wire [15:0] adc_data;
+wire cs_n;
+wire o_rest_n;
+wire r_n_w;
+wire wrreq;
+
+// assign statements (if any)                          
+assign adc_data = treg_adcdata;
+ADDA i1 (
+// port map - connection between master ports and signals/registers   
+	.adc_data(adc_data),
+	.command(command),
+	.cs_n(cs_n),
+	.drdy_n(drdy_n),
+	.i_rest_n(i_rest_n),
+	.o_rest_n(o_rest_n),
+	.r_n_w(r_n_w),
+	.sysclk_50(sysclk_50),
+	.wrreq(wrreq)
+);
+
+
+initial
+begin
+command = 1'b1;
+drdy_n = 1'b0;
+sysclk_50 = 1'b0;
+i_rest_n =1'b1;
+treg_adcdata = 16'h1010;//此处初始化则为对模块的输入
+$display("simulation Run");
+#10000 $stop;
+end
+
+always #10 sysclk_50 = ~sysclk_50;
+                                                
+endmodule

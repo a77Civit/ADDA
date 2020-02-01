@@ -1,0 +1,15 @@
+
+State Machine - |ADDA|current_sta
+Name current_sta.WAIT_DRDY current_sta.WRITECONTROL2_VAL_END current_sta.WRITECONTROL2_VAL current_sta.WRITECONTROL2_ADR_END current_sta.WRITECONTROL2_ADR current_sta.WRITECONTROL1_VAL_END current_sta.WRITECONTROL1_VAL current_sta.WRITECONTROL1_ADR_END current_sta.WRITECONTROL1_ADR current_sta.WRESET2 current_sta.WRESET1 current_sta.STATE0 
+current_sta.STATE0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_sta.WRESET1 0 0 0 0 0 0 0 0 0 0 1 1 
+current_sta.WRESET2 0 0 0 0 0 0 0 0 0 1 0 1 
+current_sta.WRITECONTROL1_ADR 0 0 0 0 0 0 0 0 1 0 0 1 
+current_sta.WRITECONTROL1_ADR_END 0 0 0 0 0 0 0 1 0 0 0 1 
+current_sta.WRITECONTROL1_VAL 0 0 0 0 0 0 1 0 0 0 0 1 
+current_sta.WRITECONTROL1_VAL_END 0 0 0 0 0 1 0 0 0 0 0 1 
+current_sta.WRITECONTROL2_ADR 0 0 0 0 1 0 0 0 0 0 0 1 
+current_sta.WRITECONTROL2_ADR_END 0 0 0 1 0 0 0 0 0 0 0 1 
+current_sta.WRITECONTROL2_VAL 0 0 1 0 0 0 0 0 0 0 0 1 
+current_sta.WRITECONTROL2_VAL_END 0 1 0 0 0 0 0 0 0 0 0 1 
+current_sta.WAIT_DRDY 1 0 0 0 0 0 0 0 0 0 0 1 

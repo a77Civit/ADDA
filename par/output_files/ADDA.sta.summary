@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.014
+TNS   : -59.253
+
+Type  : Slow 1200mV 85C Model Setup 'current_sta.WAIT_DRDY'
+Slack : -1.567
+TNS   : -1.724
+
+Type  : Slow 1200mV 85C Model Setup 'current_sta.STATE0'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'current_sta.STATE0'
+Slack : -1.627
+TNS   : -6.985
+
+Type  : Slow 1200mV 85C Model Hold 'current_sta.WAIT_DRDY'
+Slack : -0.541
+TNS   : -0.541
+
+Type  : Slow 1200mV 85C Model Hold 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.216
+TNS   : -0.216
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'current_sta.STATE0'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'current_sta.WAIT_DRDY'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sysclk_50'
+Slack : 9.934
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.614
+TNS   : -52.796
+
+Type  : Slow 1200mV 0C Model Setup 'current_sta.WAIT_DRDY'
+Slack : -1.427
+TNS   : -1.591
+
+Type  : Slow 1200mV 0C Model Setup 'current_sta.STATE0'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'current_sta.STATE0'
+Slack : -1.341
+TNS   : -5.634
+
+Type  : Slow 1200mV 0C Model Hold 'current_sta.WAIT_DRDY'
+Slack : -0.455
+TNS   : -0.455
+
+Type  : Slow 1200mV 0C Model Hold 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.328
+TNS   : -0.328
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'current_sta.STATE0'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'current_sta.WAIT_DRDY'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.668
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sysclk_50'
+Slack : 9.943
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.617
+TNS   : -22.579
+
+Type  : Fast 1200mV 0C Model Setup 'current_sta.WAIT_DRDY'
+Slack : -0.085
+TNS   : -0.085
+
+Type  : Fast 1200mV 0C Model Setup 'current_sta.STATE0'
+Slack : 0.592
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'current_sta.STATE0'
+Slack : -0.972
+TNS   : -4.326
+
+Type  : Fast 1200mV 0C Model Hold 'current_sta.WAIT_DRDY'
+Slack : -0.273
+TNS   : -0.301
+
+Type  : Fast 1200mV 0C Model Hold 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.055
+TNS   : -0.055
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'current_sta.STATE0'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'current_sta.WAIT_DRDY'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sysclk_50'
+Slack : 9.594
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'u_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.772
+TNS   : 0.000
+
+------------------------------------------------------------

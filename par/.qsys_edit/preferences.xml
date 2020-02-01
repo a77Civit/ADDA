@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="47" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="269" />
+   <clocksource preferredWidth="269" />
+   <frequency preferredWidth="250" />
+  </columns>
+ </clocktable>
+ <window width="1100" height="800" x="619" y="74" />
+ <library
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces/Pattern Generators,Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Library/Peripherals,Project,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Interface Protocols/PCI,Library/Bridges/Memory-Mapped,Library/Verification/Simulation,Library/PLL,Library/Qsys Interconnect,Library/DSP/Filters,Library/Memories and Memory Controllers/On-Chip,Library/Interface Protocols/Ethernet/Submodules,Library/Bridges,Library/Interface Protocols/Ethernet,Library/DSP,Library/DSP/Video and Image Processing,Library/Peripherals/Debug and Performance,Library/Memories and Memory Controllers/External Memory Interfaces/Performance Monitors,Library/Interface Protocols/Serial,Library/Interface Protocols/Transceiver PHY,Library/Bridges/Streaming,Library/Qsys Interconnect/Memory-Mapped,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Interface Protocols,Library/Qsys Interconnect/AXI Interface,Library/Interface Protocols/Ethernet/Example,Library/Verification,Library/Memories and Memory Controllers,Library/Merlin Components,Library/Embedded Processors,Library/Qsys Interconnect/Interrupt,Library" />
+ <hdlexample language="VERILOG" />
+</preferences>
