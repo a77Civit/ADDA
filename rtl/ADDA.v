@@ -13,9 +13,8 @@ module ADDA(
 		output reg r_n_w,    //读写信号
 		output reg cs_n,      //片选使能信??
 		output reg o_rest_n,
-		inout [15:0]adc_data,//Modelsim里inout不能是reg只能是wire
-		//output reg[15:0]i_fifo
-		output reg wrreq//初始给低
+		inout [15:0]adc_data//Modelsim里inout不能是reg只能是wire
+
 );
 //或者改用中间寄存器控制data
 
@@ -54,28 +53,46 @@ reg [4:0]time_cnt = 5'b0;/*synthesis noprune*/ //创建打拍子的综合计时�
 reg [2:0]drdy_cnt = 3'b0;
 reg [15:0]adcdata;
 reg [8:0]contro_set_flg = 9'd1;//多留一位用作初始状态
-wire [15:0]i_fifo;
+reg wrreq;
+reg rdreq;
 
-//wire ready_data_flg;//数据读取完成后清零
-//wire contro_set_flg;
+wire [15:0]i_fifo;
+wire [15:0]o_fifo;
 wire wait_six_flg;
 wire mclk;
+wire uart_clk;
+wire rdempty,rdfull,rdusedw,wrempty,wrfull,wrusedw;
 
 
 //上电后就写寄存器，CLDVIV_N = 1；使ICLK = MCLK
 assign adc_data = (wrreq == 1'b1)?(16'bz):(adcdata);//读取数据时释放总线
-//assign contro_set_flg = (time_cnt == 4'd8)?(1'b1):(1'b0);//清零需要通过将总计数器复位
 assign wait_six_flg = (time_cnt == 4'd6)?(1'b1):(1'b0);//只用一次
 assign i_fifo = (wrreq == 1)?(adc_data):(16'bz);
 
-//assign mclk = sysclk_50;
 //pll无输出，原因未明用50Mhz 时钟顶替
 ip u_pll(
 	.inclk0(sysclk_50),
 	.areset(~i_rest_n),//高电平有效的复位信号
-	.c0(mclk)
+	.c0(mclk),
+	.c1(uart_clk)
 );
  
+
+fifo	u_fifo (
+	.aclr ( ~i_rest_n ),
+	.data ( i_fifo ),
+	.rdclk ( uart_clk ),
+	.rdreq ( rdreq ),
+	.wrclk ( mclk ),
+	.wrreq ( wrreq ),
+	.q ( o_fifo ),
+	.rdempty ( rdempty ),
+	.rdfull ( rdfull ),
+	.rdusedw ( rdusedw ),
+	.wrempty ( wrempty ),
+	.wrfull ( wrfull ),
+	.wrusedw ( wrusedw )
+	);
 
 initial
 begin

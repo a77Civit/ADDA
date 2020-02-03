@@ -52,8 +52,8 @@ ADDA i1 (
 	.i_rest_n(i_rest_n),
 	.o_rest_n(o_rest_n),
 	.r_n_w(r_n_w),
-	.sysclk_50(sysclk_50),
-	.wrreq(wrreq)
+	.sysclk_50(sysclk_50)
+	
 );
 
 
