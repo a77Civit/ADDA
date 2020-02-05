@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="ADDA">
-		<CBX_INST_ENTRY INSTANCE_NAME="|ADDA|fifo:u_fifo|dcfifo:dcfifo_component" CBX_FILE_NAME="dcfifo_b9n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component" CBX_FILE_NAME="dcfifo_t7n1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|ADDA|ip:u_pll|altpll:altpll_component" CBX_FILE_NAME="ip_altpll.v"/>
 	</PROJECT>
 </LOG_ROOT>

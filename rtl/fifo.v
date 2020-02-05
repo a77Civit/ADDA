@@ -1,12 +1,12 @@
 // megafunction wizard: %FIFO%
 // GENERATION: STANDARD
 // VERSION: WM1.0
-// MODULE: dcfifo 
+// MODULE: dcfifo_mixed_widths 
 
 // ============================================================
 // File Name: fifo.v
 // Megafunction Name(s):
-// 			dcfifo
+// 			dcfifo_mixed_widths
 //
 // Simulation Library Files(s):
 // 			altera_mf
@@ -57,10 +57,10 @@ module fifo (
 	input	  rdreq;
 	input	  wrclk;
 	input	  wrreq;
-	output	[15:0]  q;
+	output	[7:0]  q;
 	output	  rdempty;
 	output	  rdfull;
-	output	[7:0]  rdusedw;
+	output	[8:0]  rdusedw;
 	output	  wrempty;
 	output	  wrfull;
 	output	[7:0]  wrusedw;
@@ -74,20 +74,20 @@ module fifo (
 
 	wire  sub_wire0;
 	wire  sub_wire1;
-	wire [15:0] sub_wire2;
+	wire [7:0] sub_wire2;
 	wire  sub_wire3;
 	wire  sub_wire4;
 	wire [7:0] sub_wire5;
-	wire [7:0] sub_wire6;
+	wire [8:0] sub_wire6;
 	wire  wrempty = sub_wire0;
 	wire  wrfull = sub_wire1;
-	wire [15:0] q = sub_wire2[15:0];
+	wire [7:0] q = sub_wire2[7:0];
 	wire  rdempty = sub_wire3;
 	wire  rdfull = sub_wire4;
 	wire [7:0] wrusedw = sub_wire5[7:0];
-	wire [7:0] rdusedw = sub_wire6[7:0];
+	wire [8:0] rdusedw = sub_wire6[8:0];
 
-	dcfifo	dcfifo_component (
+	dcfifo_mixed_widths	dcfifo_mixed_widths_component (
 				.rdclk (rdclk),
 				.wrreq (wrreq),
 				.aclr (aclr),
@@ -102,19 +102,21 @@ module fifo (
 				.wrusedw (sub_wire5),
 				.rdusedw (sub_wire6));
 	defparam
-		dcfifo_component.intended_device_family = "Cyclone IV E",
-		dcfifo_component.lpm_numwords = 256,
-		dcfifo_component.lpm_showahead = "OFF",
-		dcfifo_component.lpm_type = "dcfifo",
-		dcfifo_component.lpm_width = 16,
-		dcfifo_component.lpm_widthu = 8,
-		dcfifo_component.overflow_checking = "ON",
-		dcfifo_component.rdsync_delaypipe = 4,
-		dcfifo_component.read_aclr_synch = "OFF",
-		dcfifo_component.underflow_checking = "ON",
-		dcfifo_component.use_eab = "ON",
-		dcfifo_component.write_aclr_synch = "OFF",
-		dcfifo_component.wrsync_delaypipe = 4;
+		dcfifo_mixed_widths_component.intended_device_family = "Cyclone IV E",
+		dcfifo_mixed_widths_component.lpm_numwords = 256,
+		dcfifo_mixed_widths_component.lpm_showahead = "OFF",
+		dcfifo_mixed_widths_component.lpm_type = "dcfifo_mixed_widths",
+		dcfifo_mixed_widths_component.lpm_width = 16,
+		dcfifo_mixed_widths_component.lpm_widthu = 8,
+		dcfifo_mixed_widths_component.lpm_widthu_r = 9,
+		dcfifo_mixed_widths_component.lpm_width_r = 8,
+		dcfifo_mixed_widths_component.overflow_checking = "ON",
+		dcfifo_mixed_widths_component.rdsync_delaypipe = 4,
+		dcfifo_mixed_widths_component.read_aclr_synch = "OFF",
+		dcfifo_mixed_widths_component.underflow_checking = "ON",
+		dcfifo_mixed_widths_component.use_eab = "ON",
+		dcfifo_mixed_widths_component.write_aclr_synch = "OFF",
+		dcfifo_mixed_widths_component.wrsync_delaypipe = 4;
 
 
 endmodule
@@ -143,9 +145,9 @@ endmodule
 // Retrieval info: PRIVATE: UsedW NUMERIC "1"
 // Retrieval info: PRIVATE: Width NUMERIC "16"
 // Retrieval info: PRIVATE: dc_aclr NUMERIC "1"
-// Retrieval info: PRIVATE: diff_widths NUMERIC "0"
+// Retrieval info: PRIVATE: diff_widths NUMERIC "1"
 // Retrieval info: PRIVATE: msb_usedw NUMERIC "0"
-// Retrieval info: PRIVATE: output_width NUMERIC "16"
+// Retrieval info: PRIVATE: output_width NUMERIC "8"
 // Retrieval info: PRIVATE: rsEmpty NUMERIC "1"
 // Retrieval info: PRIVATE: rsFull NUMERIC "1"
 // Retrieval info: PRIVATE: rsUsedW NUMERIC "1"
@@ -158,9 +160,11 @@ endmodule
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
 // Retrieval info: CONSTANT: LPM_NUMWORDS NUMERIC "256"
 // Retrieval info: CONSTANT: LPM_SHOWAHEAD STRING "OFF"
-// Retrieval info: CONSTANT: LPM_TYPE STRING "dcfifo"
+// Retrieval info: CONSTANT: LPM_TYPE STRING "dcfifo_mixed_widths"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "16"
 // Retrieval info: CONSTANT: LPM_WIDTHU NUMERIC "8"
+// Retrieval info: CONSTANT: LPM_WIDTHU_R NUMERIC "9"
+// Retrieval info: CONSTANT: LPM_WIDTH_R NUMERIC "8"
 // Retrieval info: CONSTANT: OVERFLOW_CHECKING STRING "ON"
 // Retrieval info: CONSTANT: RDSYNC_DELAYPIPE NUMERIC "4"
 // Retrieval info: CONSTANT: READ_ACLR_SYNCH STRING "OFF"
@@ -170,12 +174,12 @@ endmodule
 // Retrieval info: CONSTANT: WRSYNC_DELAYPIPE NUMERIC "4"
 // Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT GND "aclr"
 // Retrieval info: USED_PORT: data 0 0 16 0 INPUT NODEFVAL "data[15..0]"
-// Retrieval info: USED_PORT: q 0 0 16 0 OUTPUT NODEFVAL "q[15..0]"
+// Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL "q[7..0]"
 // Retrieval info: USED_PORT: rdclk 0 0 0 0 INPUT NODEFVAL "rdclk"
 // Retrieval info: USED_PORT: rdempty 0 0 0 0 OUTPUT NODEFVAL "rdempty"
 // Retrieval info: USED_PORT: rdfull 0 0 0 0 OUTPUT NODEFVAL "rdfull"
 // Retrieval info: USED_PORT: rdreq 0 0 0 0 INPUT NODEFVAL "rdreq"
-// Retrieval info: USED_PORT: rdusedw 0 0 8 0 OUTPUT NODEFVAL "rdusedw[7..0]"
+// Retrieval info: USED_PORT: rdusedw 0 0 9 0 OUTPUT NODEFVAL "rdusedw[8..0]"
 // Retrieval info: USED_PORT: wrclk 0 0 0 0 INPUT NODEFVAL "wrclk"
 // Retrieval info: USED_PORT: wrempty 0 0 0 0 OUTPUT NODEFVAL "wrempty"
 // Retrieval info: USED_PORT: wrfull 0 0 0 0 OUTPUT NODEFVAL "wrfull"
@@ -187,10 +191,10 @@ endmodule
 // Retrieval info: CONNECT: @rdreq 0 0 0 0 rdreq 0 0 0 0
 // Retrieval info: CONNECT: @wrclk 0 0 0 0 wrclk 0 0 0 0
 // Retrieval info: CONNECT: @wrreq 0 0 0 0 wrreq 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 16 0 @q 0 0 16 0
+// Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
 // Retrieval info: CONNECT: rdempty 0 0 0 0 @rdempty 0 0 0 0
 // Retrieval info: CONNECT: rdfull 0 0 0 0 @rdfull 0 0 0 0
-// Retrieval info: CONNECT: rdusedw 0 0 8 0 @rdusedw 0 0 8 0
+// Retrieval info: CONNECT: rdusedw 0 0 9 0 @rdusedw 0 0 9 0
 // Retrieval info: CONNECT: wrempty 0 0 0 0 @wrempty 0 0 0 0
 // Retrieval info: CONNECT: wrfull 0 0 0 0 @wrfull 0 0 0 0
 // Retrieval info: CONNECT: wrusedw 0 0 8 0 @wrusedw 0 0 8 0

@@ -5,7 +5,7 @@ date：20200203
 author ：Civi Cheng
 
 */
-module (
+module uart(
     input [7:0] paralle_data,
     input sysclk_12,
     input i_rest_n,
@@ -15,18 +15,17 @@ module (
     
 );
 parameter BAUD_RATE = 115200;//默认115200可以传参数改变
-parameter CLK_FREQURENCE = 12000000;//12MHz输入时钟
+parameter CLK_FREQURENCE = 50000000;//50MHz输入时钟
 parameter BIT_CNT = CLK_FREQURENCE/BAUD_RATE;//计算每位信号发送需要的计数次数
 
-wire uart_en;
-wire send_sta_flg;//发送状态标志位
+
 wire en_flg;
-wire bit_flg;//0为发送低位，1为发送高位
 reg [7:0]data_buf;
 reg [3:0]tim_cnt;
 reg [15:0]clk_cnt;
 reg uart_en_d0,uart_en_d1;
 
+reg send_sta_flg;//发送状态标志位
 //捕获使能信号的上升沿，配合下面的延迟两个周期
 //制造了一个时钟周期的
 assign en_flg = (~uart_en_d1) & uart_en_d0;
@@ -52,13 +51,11 @@ begin
         begin
             data_buf <= 16'd0;
             send_sta_flg <= 1'b0;
-            sb_cnt <= 2'b0;
         end
     else
         begin
             if(en_flg)
                 begin
-                    if(!bit_flg)//若为0则发送低位若为1则发送高位 没发送完一次取反
                         send_sta_flg <= 1'b1;
                         data_buf <= paralle_data;
                 end
@@ -66,12 +63,12 @@ begin
                 begin
                     if ((tim_cnt == 4'd9)&&(clk_cnt == BIT_CNT/2)) //发送完成并再停止位的一半结束发送过程
                         begin
-                            tx_data <= 8'd0;
+                            data_buf <= 8'd0;
                             send_sta_flg <= 1'b0;
                         end 
                     else 
                         begin
-                            tx_data <= tx_data;//否则保持不变
+                            data_buf <= data_buf;//否则保持不变
                             send_sta_flg <= send_sta_flg;
                         end
                 end
@@ -140,7 +137,7 @@ begin
                     tx_data <= data_buf[7];
                 4'd9:
                     tx_data <= 1'b1;//结束位
-                default:
+                default:;
                     endcase
                 end
             else 

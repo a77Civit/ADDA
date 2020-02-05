@@ -57,7 +57,7 @@ reg wrreq;
 reg rdreq;
 
 wire [15:0]i_fifo;
-wire [15:0]o_fifo;
+wire [7:0]o_fifo;
 wire wait_six_flg;
 wire mclk;
 wire uart_clk;
