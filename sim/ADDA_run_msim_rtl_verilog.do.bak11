@@ -35,6 +35,7 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/ADDA.v}
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/ip.v}
+vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/fifo.v}
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/par/db {E:/FPGAProgramm/ADDA/par/db/ip_altpll.v}
 
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/par/../sim {E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt}

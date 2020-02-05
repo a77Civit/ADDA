@@ -65,9 +65,9 @@ sysclk_50 = 1'b0;
 i_rest_n =1'b1;
 treg_adcdata = 16'h1010;//此处初始化则为对模块的输入
 $display("simulation Run");
-#10000 $stop;
 end
 
-always #10 sysclk_50 = ~sysclk_50;
+always #10 sysclk_50 <= ~sysclk_50;
+always #55 drdy_n <= ~drdy_n;
                                                 
 endmodule

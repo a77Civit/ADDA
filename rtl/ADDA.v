@@ -60,16 +60,18 @@ wire [15:0]i_fifo;
 wire [7:0]o_fifo;
 wire wait_six_flg;
 wire mclk;
-wire uart_clk;
-wire rdempty,rdfull,rdusedw,wrempty,wrfull,wrusedw;
+wire rdempty,rdfull,wrempty,wrfull;
+wire [7:0]wrusedw;
+wire [7:0]rdusedw;
 
 
 //上电后就写寄存器，CLDVIV_N = 1；使ICLK = MCLK
 assign adc_data = (wrreq == 1'b1)?(16'bz):(adcdata);//读取数据时释放总线
 assign wait_six_flg = (time_cnt == 4'd6)?(1'b1):(1'b0);//只用一次
-assign i_fifo = (wrreq == 1)?(adc_data):(16'bz);
+assign i_fifo = ((wrreq == 1)&&(~wrfull))?(adc_data):(16'bz);//请求为1同时未写满，写满了FIFO恢复会复位全部置一
 
-//pll无输出，原因未明用50Mhz 时钟顶替
+//针对信号的读取应该针对单独添加drdy_n敏感的always块,将时钟同步为50MHz的FIFO
+
 ip u_pll(
 	.inclk0(sysclk_50),
 	.areset(~i_rest_n),//高电平有效的复位信号
@@ -81,9 +83,9 @@ ip u_pll(
 fifo	u_fifo (
 	.aclr ( ~i_rest_n ),
 	.data ( i_fifo ),
-	.rdclk ( uart_clk ),
 	.rdreq ( rdreq ),
-	.wrclk ( mclk ),
+	.rdclk(sysclk_50),
+	.wrclk ( sysclk_50 ),
 	.wrreq ( wrreq ),
 	.q ( o_fifo ),
 	.rdempty ( rdempty ),
@@ -232,6 +234,8 @@ begin
 			WAIT_DRDY:
 				if(command == 0)
 					next_sta <= STATE0;
+				else
+					next_sta <= WAIT_DRDY;
 
 			default:
 				next_sta <= STATE0;
@@ -249,6 +253,8 @@ case(current_sta)
 			cs_n <= 1'b1;
 			r_n_w <= 1'b1;
 			adcdata <= 16'd0;
+			wrreq <= 1'b0;
+			rdreq <= 1'b0;
 		end
 	WRESET1:
 		o_rest_n <= 1'b0;
@@ -299,7 +305,6 @@ case(current_sta)
 
 	WAIT_DRDY://拉低片选和读线，等待drdy上升沿
 	begin
-		wrreq <= 1'b0;
 		cs_n <= 1'b0;
 		r_n_w <= 1'b0;//先拉低cs和读写信号，等待drdy信号号再读取输出数据
 		if (drdy_n == 1'b1) begin

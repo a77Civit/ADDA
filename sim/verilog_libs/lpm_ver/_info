@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dE:/FPGAProgramm/ADDA/sim
 vlpm_abs
-Z1 !s110 1580582021
+Z1 !s110 1580923618
 !i10b 1
 !s100 <eMUJ2Bc:0iJb^8e`knSV1
 IPmIP9[H@UJ9gX:7CzSVZD0
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1580582021.589000
+Z7 !s108 1580923618.417000
 Z8 !s107 d:/altera/13.1standard/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|d:/altera/13.1standard/quartus/eda/sim_lib/220model.v|
 !i113 0

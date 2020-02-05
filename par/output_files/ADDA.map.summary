@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Feb 05 16:15:24 2020
+Analysis & Synthesis Status : Successful - Thu Feb 06 01:26:36 2020
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : ADDA
 Top-level Entity Name : ADDA
 Family : Cyclone IV E
-Total logic elements : 67
-    Total combinational functions : 67
+Total logic elements : 71
+    Total combinational functions : 71
     Dedicated logic registers : 20
 Total registers : 20
 Total pins : 23

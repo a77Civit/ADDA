@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dE:/FPGAProgramm/ADDA/sim
 T_opt
-Z1 !s110 1580582025
-V?1TQ96K7jnGI<nBgaH;P93
+!s110 1580923624
+V@8?bfSo8;D<kGELKBjcdz1
 04 8 4 work ADDAtest fast 0
-=1-00e04c71c5d3-5e35c489-2ff-160
+=1-00e04c71c5d3-5e3afae8-52-4ce4
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
 n@_opt
 OL;O;10.4;61
 vADDA
-R1
+Z1 !s110 1580923623
 !i10b 1
-!s100 D<]i8d6lWGYzb[i4Nm5g@3
-I0f?7I:<>@H[jVMVDYmnf<3
+!s100 gXG:973[IZb?^;G>BjS7F1
+I>`WmjBlLJo5[SU]daWg9j1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1580581836
+w1580923591
 8E:/FPGAProgramm/ADDA/rtl/ADDA.v
 FE:/FPGAProgramm/ADDA/rtl/ADDA.v
 L0 8
@@ -31,7 +31,7 @@ Z3 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1580582025.023000
+!s108 1580923622.976000
 !s107 E:/FPGAProgramm/ADDA/rtl/ADDA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGAProgramm/ADDA/rtl|E:/FPGAProgramm/ADDA/rtl/ADDA.v|
 !i113 0
@@ -41,11 +41,11 @@ n@a@d@d@a
 vADDAtest
 R1
 !i10b 1
-!s100 o_6V_N6gaB4gAVcFbRV430
-IJ?8Qz^6gRjTU59cMeVc_e1
+!s100 aK5C:EF0::S_3aJSke4F^1
+I@]H8ml4[mMFV5f><f<FN91
 R2
 R0
-w1580578641
+w1580919967
 8E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt
 FE:/FPGAProgramm/ADDA/par/../sim/ADDA.vt
 L0 28
@@ -53,29 +53,50 @@ R3
 r1
 !s85 0
 31
-!s108 1580582025.356000
+!s108 1580923623.550000
 !s107 E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGAProgramm/ADDA/par/../sim|E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt|
 !i113 0
 R4
 !s92 -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/par/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 n@a@d@d@atest
-vip
+vfifo
 R1
 !i10b 1
-!s100 TAioldEQFf6CcUNh<OWS80
-IDHf41cn8QSAAX?iDib<cP1
+!s100 lHAB2`=XgkmAO1IWn4T5n1
+IgjM5P:M8Vk`G6Y;kc@LJi0
 R2
 R0
-w1580563853
-8E:/FPGAProgramm/ADDA/rtl/ip.v
-FE:/FPGAProgramm/ADDA/rtl/ip.v
-L0 39
+w1580923476
+8E:/FPGAProgramm/ADDA/rtl/fifo.v
+FE:/FPGAProgramm/ADDA/rtl/fifo.v
+Z6 L0 39
 R3
 r1
 !s85 0
 31
-!s108 1580582025.133000
+!s108 1580923623.276000
+!s107 E:/FPGAProgramm/ADDA/rtl/fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGAProgramm/ADDA/rtl|E:/FPGAProgramm/ADDA/rtl/fifo.v|
+!i113 0
+R4
+R5
+vip
+R1
+!i10b 1
+!s100 nDIdRB]D_?zL8oG`3O<oz1
+I[P>RZ`5zOVNmoPX0<LK443
+R2
+R0
+w1580890511
+8E:/FPGAProgramm/ADDA/rtl/ip.v
+FE:/FPGAProgramm/ADDA/rtl/ip.v
+R6
+R3
+r1
+!s85 0
+31
+!s108 1580923623.133000
 !s107 E:/FPGAProgramm/ADDA/rtl/ip.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGAProgramm/ADDA/rtl|E:/FPGAProgramm/ADDA/rtl/ip.v|
 !i113 0
@@ -84,11 +105,11 @@ R5
 vip_altpll
 R1
 !i10b 1
-!s100 ]m875^G<9HM_7K?iMRFOd3
-INfnhFPO<k4UP4_VA_I8[Q2
+!s100 THe3Kagf]OaUj=dBPd6Cj3
+I?;jC^`h^3S5]_>0>aI:?h3
 R2
 R0
-w1580563859
+w1580890522
 8E:/FPGAProgramm/ADDA/par/db/ip_altpll.v
 FE:/FPGAProgramm/ADDA/par/db/ip_altpll.v
 L0 29
@@ -96,7 +117,7 @@ R3
 r1
 !s85 0
 31
-!s108 1580582025.233000
+!s108 1580923623.411000
 !s107 E:/FPGAProgramm/ADDA/par/db/ip_altpll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/FPGAProgramm/ADDA/par/db|E:/FPGAProgramm/ADDA/par/db/ip_altpll.v|
 !i113 0

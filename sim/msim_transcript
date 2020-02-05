@@ -30,7 +30,7 @@
 #          Updated modelsim.ini.
 # vlog -vlog01compat -work altera_ver {d:/altera/13.1standard/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:40 on Feb 02,2020
+# Start time: 01:26:57 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work altera_ver d:/altera/13.1standard/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -108,7 +108,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 02:33:41 on Feb 02,2020, Elapsed time: 0:00:01
+# End time: 01:26:57 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -120,7 +120,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {d:/altera/13.1standard/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:41 on Feb 02,2020
+# Start time: 01:26:58 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/altera/13.1standard/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -184,7 +184,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 02:33:41 on Feb 02,2020, Elapsed time: 0:00:00
+# End time: 01:26:58 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -196,7 +196,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {d:/altera/13.1standard/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:42 on Feb 02,2020
+# Start time: 01:26:59 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/altera/13.1standard/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -238,7 +238,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 02:33:42 on Feb 02,2020, Elapsed time: 0:00:00
+# End time: 01:26:59 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -250,7 +250,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {d:/altera/13.1standard/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:42 on Feb 02,2020
+# Start time: 01:26:59 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/altera/13.1standard/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -375,7 +375,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 02:33:43 on Feb 02,2020, Elapsed time: 0:00:01
+# End time: 01:27:00 on Feb 06,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -387,7 +387,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {d:/altera/13.1standard/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:43 on Feb 02,2020
+# Start time: 01:27:01 on Feb 06,2020
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/altera/13.1standard/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -450,7 +450,7 @@
 # 	altera_pll_reconfig_tasks
 # 	altera_syncram
 # 	altera_pll
-# End time: 02:33:44 on Feb 02,2020, Elapsed time: 0:00:01
+# End time: 01:27:01 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneive_ver
@@ -462,7 +462,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneive_ver {d:/altera/13.1standard/quartus/eda/sim_lib/cycloneive_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:44 on Feb 02,2020
+# Start time: 01:27:02 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/altera/13.1standard/quartus/eda/sim_lib/cycloneive_atoms.v 
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFE
 # -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
@@ -538,7 +538,7 @@
 # 	cycloneive_jtag
 # 	cycloneive_crcblock
 # 	cycloneive_oscillator
-# End time: 02:33:44 on Feb 02,2020, Elapsed time: 0:00:00
+# End time: 01:27:02 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -552,51 +552,61 @@
 # 
 # vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/ADDA.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:44 on Feb 02,2020
+# Start time: 01:27:02 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGAProgramm/ADDA/rtl" E:/FPGAProgramm/ADDA/rtl/ADDA.v 
 # -- Compiling module ADDA
-# ** Warning: E:/FPGAProgramm/ADDA/rtl/ADDA.v(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: E:/FPGAProgramm/ADDA/rtl/ADDA.v(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # 
 # Top level modules:
 # 	ADDA
-# End time: 02:33:45 on Feb 02,2020, Elapsed time: 0:00:01
+# End time: 01:27:03 on Feb 06,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/ip.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:45 on Feb 02,2020
+# Start time: 01:27:03 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGAProgramm/ADDA/rtl" E:/FPGAProgramm/ADDA/rtl/ip.v 
 # -- Compiling module ip
 # 
 # Top level modules:
 # 	ip
-# End time: 02:33:45 on Feb 02,2020, Elapsed time: 0:00:00
+# End time: 01:27:03 on Feb 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/fifo.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 01:27:03 on Feb 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGAProgramm/ADDA/rtl" E:/FPGAProgramm/ADDA/rtl/fifo.v 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 01:27:03 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/par/db {E:/FPGAProgramm/ADDA/par/db/ip_altpll.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:45 on Feb 02,2020
+# Start time: 01:27:03 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGAProgramm/ADDA/par/db" E:/FPGAProgramm/ADDA/par/db/ip_altpll.v 
 # -- Compiling module ip_altpll
 # 
 # Top level modules:
 # 	ip_altpll
-# End time: 02:33:45 on Feb 02,2020, Elapsed time: 0:00:00
+# End time: 01:27:03 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/par/../sim {E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:33:45 on Feb 02,2020
+# Start time: 01:27:03 on Feb 06,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/FPGAProgramm/ADDA/par/../sim" E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt 
 # -- Compiling module ADDAtest
 # 
 # Top level modules:
 # 	ADDAtest
-# End time: 02:33:45 on Feb 02,2020, Elapsed time: 0:00:00
+# End time: 01:27:03 on Feb 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ADDAtest
 # vsim -gui "+altera" -l msim_transcript -do "ADDA_run_msim_rtl_verilog.do" 
-# Start time: 02:33:45 on Feb 02,2020
+# Start time: 01:27:03 on Feb 06,2020
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # Loading work.ADDAtest(fast)
@@ -609,6 +619,25 @@
 # Loading altera_mf_ver.cda_n_cntr(fast)
 # Loading altera_mf_ver.cda_scale_cntr(fast)
 # Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.fifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__5)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__6)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# ** Warning: (vsim-3015) E:/FPGAProgramm/ADDA/rtl/ADDA.v(83): [PCDPC] - Port size (9) does not match connection size (8) for port 'rdusedw'. The port definition is at: E:/FPGAProgramm/ADDA/rtl/fifo.v(49).
+#    Time: 0 ps  Iteration: 0  Instance: /ADDAtest/i1/u_fifo File: E:/FPGAProgramm/ADDA/rtl/fifo.v
 # 
 # add wave *
 # 
@@ -620,8 +649,54 @@
 # simulation Run
 #  Note : Cyclone IV E PLL locked to incoming clock
 # Time: 90000  Instance: ADDAtest.i1.u_pll.altpll_component.cycloneiii_pll.pll3
-# ** Note: $stop    : E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt(68)
-#    Time: 10 us  Iteration: 0  Instance: /ADDAtest
-# Break in Module ADDAtest at E:/FPGAProgramm/ADDA/par/../sim/ADDA.vt line 68
-# End time: 02:35:04 on Feb 02,2020, Elapsed time: 0:01:19
-# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.ADDAtest(fast)
+# Loading work.ADDA(fast)
+# Loading work.ip(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.fifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__5)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__6)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# ** Warning: (vsim-3015) E:/FPGAProgramm/ADDA/rtl/ADDA.v(83): [PCDPC] - Port size (9) does not match connection size (8) for port 'rdusedw'. The port definition is at: E:/FPGAProgramm/ADDA/rtl/fifo.v(49).
+#    Time: 0 ps  Iteration: 0  Instance: /ADDAtest/i1/u_fifo File: E:/FPGAProgramm/ADDA/rtl/fifo.v
+add wave -position insertpoint  \
+sim:/ADDAtest/i1/i_fifo
+add wave -position insertpoint  \
+sim:/ADDAtest/i1/wrusedw
+add wave -position insertpoint  \
+sim:/ADDAtest/i1/mclk
+run
+# simulation Run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 90000  Instance: ADDAtest.i1.u_pll.altpll_component.cycloneiii_pll.pll3
+run
+run
+run
+run
+run
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 01:30:42 on Feb 06,2020, Elapsed time: 0:03:39
+# Errors: 0, Warnings: 3
