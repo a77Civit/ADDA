@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ADDA
-Thu Feb 06 01:26:37 2020
+Fri Feb 07 01:19:39 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -13,34 +13,35 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. State Machine - |ADDA|current_sta
- 10. User-Specified and Inferred Latches
- 11. Registers Removed During Synthesis
- 12. Removed Registers Triggering Further Register Optimizations
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. State Machine - |ADDA|current_sta
+ 11. User-Specified and Inferred Latches
+ 12. Registers Removed During Synthesis
  13. General Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated
- 16. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p
- 17. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p
- 18. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram
- 19. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_oe9:rs_brp
- 20. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:rs_bwp
- 21. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp
- 22. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10
- 23. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_brp
- 24. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_bwp
- 25. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp
- 26. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13
- 27. Parameter Settings for User Entity Instance: Top-level Entity: |ADDA
- 28. Parameter Settings for User Entity Instance: ip:u_pll|altpll:altpll_component
- 29. Parameter Settings for User Entity Instance: fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component
- 30. altpll Parameter Settings by Entity Instance
- 31. Port Connectivity Checks: "fifo:u_fifo"
- 32. Port Connectivity Checks: "ip:u_pll"
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
- 35. Analysis & Synthesis Suppressed Messages
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated
+ 17. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p
+ 18. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p
+ 19. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram
+ 20. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_oe9:rs_brp
+ 21. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:rs_bwp
+ 22. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp
+ 23. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10
+ 24. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_brp
+ 25. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_bwp
+ 26. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp
+ 27. Source assignments for fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13
+ 28. Parameter Settings for User Entity Instance: Top-level Entity: |ADDA
+ 29. Parameter Settings for User Entity Instance: uart:u_uart
+ 30. Parameter Settings for User Entity Instance: ip:u_pll|altpll:altpll_component
+ 31. Parameter Settings for User Entity Instance: fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component
+ 32. altpll Parameter Settings by Entity Instance
+ 33. Port Connectivity Checks: "fifo:u_fifo"
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -66,18 +67,18 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 06 01:26:36 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 07 01:19:39 2020       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; ADDA                                        ;
 ; Top-level Entity Name              ; ADDA                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 71                                          ;
-;     Total combinational functions  ; 71                                          ;
-;     Dedicated logic registers      ; 20                                          ;
-; Total registers                    ; 20                                          ;
-; Total pins                         ; 23                                          ;
+; Total logic elements               ; 304                                         ;
+;     Total combinational functions  ; 238                                         ;
+;     Dedicated logic registers      ; 175                                         ;
+; Total registers                    ; 175                                         ;
+; Total pins                         ; 24                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
+; Total memory bits                  ; 4,096                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
@@ -181,12 +182,11 @@ applicable agreement for further details.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-8         ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -195,6 +195,7 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                   ; Library ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------+---------+
+; ../rtl/uart.v                    ; yes             ; User Verilog HDL File        ; E:/FPGAProgramm/ADDA/rtl/uart.v                                                ;         ;
 ; ../rtl/ADDA.v                    ; yes             ; User Verilog HDL File        ; E:/FPGAProgramm/ADDA/rtl/ADDA.v                                                ;         ;
 ; ../rtl/ip.v                      ; yes             ; User Wizard-Generated File   ; E:/FPGAProgramm/ADDA/rtl/ip.v                                                  ;         ;
 ; ../rtl/fifo.v                    ; yes             ; User Wizard-Generated File   ; E:/FPGAProgramm/ADDA/rtl/fifo.v                                                ;         ;
@@ -227,45 +228,77 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 71             ;
+; Estimated Total logic elements              ; 304            ;
 ;                                             ;                ;
-; Total combinational functions               ; 71             ;
+; Total combinational functions               ; 238            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 27             ;
-;     -- 3 input functions                    ; 28             ;
-;     -- <=2 input functions                  ; 16             ;
+;     -- 4 input functions                    ; 105            ;
+;     -- 3 input functions                    ; 75             ;
+;     -- <=2 input functions                  ; 58             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 67             ;
-;     -- arithmetic mode                      ; 4              ;
+;     -- normal mode                          ; 204            ;
+;     -- arithmetic mode                      ; 34             ;
 ;                                             ;                ;
-; Total registers                             ; 20             ;
-;     -- Dedicated logic registers            ; 20             ;
+; Total registers                             ; 175            ;
+;     -- Dedicated logic registers            ; 175            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 23             ;
+; I/O pins                                    ; 24             ;
+; Total memory bits                           ; 4096           ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Total PLLs                                  ; 1              ;
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; i_rest_n~input ;
-; Maximum fan-out                             ; 32             ;
-; Total fan-out                               ; 352            ;
-; Average fan-out                             ; 2.29           ;
+; Maximum fan-out                             ; 194            ;
+; Total fan-out                               ; 1599           ;
+; Average fan-out                             ; 3.29           ;
 +---------------------------------------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Library Name ;
-+-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
-; |ADDA                               ; 71 (71)           ; 20 (20)      ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |ADDA                                                           ; work         ;
-;    |ip:u_pll|                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll                                                  ; work         ;
-;       |altpll:altpll_component|     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll|altpll:altpll_component                          ; work         ;
-;          |ip_altpll:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll|altpll:altpll_component|ip_altpll:auto_generated ; work         ;
-+-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                    ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                             ; Library Name ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |ADDA                                                     ; 238 (91)          ; 175 (21)     ; 4096        ; 0            ; 0       ; 0         ; 24   ; 0            ; |ADDA                                                                                                                                           ; work         ;
+;    |fifo:u_fifo|                                          ; 98 (0)            ; 122 (0)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo                                                                                                                               ; work         ;
+;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 98 (0)            ; 122 (0)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
+;          |dcfifo_t7n1:auto_generated|                     ; 98 (23)           ; 122 (28)     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated                                                  ; work         ;
+;             |a_gray2bin_ugb:rdptr_g_gray2bin|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_gray2bin_ugb:rdptr_g_gray2bin                  ; work         ;
+;             |a_gray2bin_ugb:rs_dgwp_gray2bin|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_gray2bin_ugb:rs_dgwp_gray2bin                  ; work         ;
+;             |a_gray2bin_ugb:wrptr_g_gray2bin|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_gray2bin_ugb:wrptr_g_gray2bin                  ; work         ;
+;             |a_gray2bin_ugb:ws_dgrp_gray2bin|             ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_gray2bin_ugb:ws_dgrp_gray2bin                  ; work         ;
+;             |a_graycounter_pjc:wrptr_g1p|                 ; 16 (16)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p                      ; work         ;
+;             |a_graycounter_s57:rdptr_g1p|                 ; 16 (16)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p                      ; work         ;
+;             |alt_synch_pipe_kkd:rs_dgwp|                  ; 0 (0)             ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp                       ; work         ;
+;                |dffpipe_jd9:dffpipe10|                    ; 0 (0)             ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10 ; work         ;
+;             |alt_synch_pipe_lkd:ws_dgrp|                  ; 0 (0)             ; 18 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp                       ; work         ;
+;                |dffpipe_kd9:dffpipe13|                    ; 0 (0)             ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13 ; work         ;
+;             |altsyncram_ei31:fifo_ram|                    ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram                         ; work         ;
+;             |cmpr_f66:rdempty_eq_comp|                    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|cmpr_f66:rdempty_eq_comp                         ; work         ;
+;             |cmpr_f66:wrfull_eq_comp|                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|cmpr_f66:wrfull_eq_comp                          ; work         ;
+;             |cntr_54e:cntr_b|                             ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|cntr_54e:cntr_b                                  ; work         ;
+;             |dffpipe_gd9:rs_bwp|                          ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:rs_bwp                               ; work         ;
+;             |dffpipe_gd9:ws_brp|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_brp                               ; work         ;
+;             |dffpipe_gd9:ws_bwp|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_bwp                               ; work         ;
+;             |dffpipe_oe9:rs_brp|                          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_oe9:rs_brp                               ; work         ;
+;    |ip:u_pll|                                             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll                                                                                                                                  ; work         ;
+;       |altpll:altpll_component|                           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll|altpll:altpll_component                                                                                                          ; work         ;
+;          |ip_altpll:auto_generated|                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll|altpll:altpll_component|ip_altpll:auto_generated                                                                                 ; work         ;
+;    |uart:u_uart|                                          ; 49 (49)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|uart:u_uart                                                                                                                               ; work         ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                 ;
++------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                         ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 256          ; 16           ; 512          ; 8            ; 4096 ; None ;
++------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -307,149 +340,33 @@ Encoding Type:  One-Hot
 ; r_n_w$latch                                         ; WideOr15            ; yes                    ;
 ; cs_n$latch                                          ; cs_n                ; yes                    ;
 ; o_rest_n$latch                                      ; WideOr12            ; yes                    ;
-; wrreq                                               ; WideOr15            ; yes                    ;
-; adcdata[0]~0                                        ; WideOr20            ; yes                    ;
-; adcdata[0]_415                                      ; WideOr20            ; yes                    ;
-; adcdata[1]~2                                        ; WideOr20            ; yes                    ;
-; adcdata[1]_430                                      ; WideOr20            ; yes                    ;
-; adcdata[2]_445                                      ; WideOr20            ; yes                    ;
-; adcdata[5]                                          ; WideOr20            ; yes                    ;
-; adcdata[5]_490                                      ; WideOr20            ; yes                    ;
-; Number of user-specified and inferred latches = 11  ;                     ;                        ;
+; adcdata[0]~1                                        ; WideOr18            ; yes                    ;
+; adcdata[0]_438                                      ; WideOr18            ; yes                    ;
+; adcdata[1]~0                                        ; WideOr18            ; yes                    ;
+; adcdata[1]_453                                      ; WideOr18            ; yes                    ;
+; adcdata[2]_468                                      ; WideOr18            ; yes                    ;
+; adcdata[5]                                          ; WideOr18            ; yes                    ;
+; adcdata[5]_513                                      ; WideOr18            ; yes                    ;
+; Number of user-specified and inferred latches = 10  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                    ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-; Register name                                                                                                                                           ; Reason for Removal                          ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[0]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[0]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[0]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[1]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[1]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[1]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[2]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[2]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[2]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[3]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[3]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[3]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[4]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[4]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[4]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[5]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[5]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[5]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[6]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[6]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[6]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[7]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[7]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[7]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[8]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[8]    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[8]                                             ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[0..8]                                                  ; Stuck at GND due to stuck port clock_enable ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|cntr_54e:cntr_b|counter_reg_bit[0]                             ; Stuck at GND due to stuck port clock_enable ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[0..8] ; Stuck at GND due to stuck port data_in      ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[0..8] ; Stuck at GND due to stuck port data_in      ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[0..8]                                                  ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a0                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a1                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a2                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a3                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a4                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a5                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a6                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a7                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a8                         ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|parity9                            ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|sub_parity10a[0..2]                ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[0..8]                    ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|parity5                            ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|sub_parity6a0                      ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|sub_parity6a1                      ; Lost fanout                                 ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|sub_parity6a2                      ; Lost fanout                                 ;
-; current_sta~4                                                                                                                                           ; Lost fanout                                 ;
-; current_sta~5                                                                                                                                           ; Lost fanout                                 ;
-; current_sta~6                                                                                                                                           ; Lost fanout                                 ;
-; current_sta~7                                                                                                                                           ; Lost fanout                                 ;
-; Total Number of Removed Registers = 94                                                                                                                  ;                                             ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                                                                                                                   ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                                                                        ; Reason for Removal             ; Registers Removed due to This Register                                                                                                                ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[0] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[0], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[0],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[0],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a0                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[1] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[1], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[1],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[1],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a1                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[2] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[2], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[2],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[2],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a2                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[3] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[3], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[3],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[3],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a3                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[4] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[4], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[4],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[4],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a4                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[5] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[5], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[5],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[5],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a5                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[6] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[6], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[6],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[6],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a6                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[7] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[7], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[7],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[7],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a7                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe12a[8] ; Lost Fanouts                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_kkd:rs_dgwp|dffpipe_jd9:dffpipe10|dffe11a[8], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|delayed_wrptr_g[8],                                          ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|wrptr_g[8],                                                  ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a8                       ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[8]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[8], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[8], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[8]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[7]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[7], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[7], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[7]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[6]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[6], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[6], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[6]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[5]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[5], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[5], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[5]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[4]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[4], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[4], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[4]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[3]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[3], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[3], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[3]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[2]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[2], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[2], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[2]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[1]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[1], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[1], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[1]                     ;
-; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|rdptr_g[0]                                                  ; Stuck at GND                   ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe14a[0], ;
-;                                                                                                                                                      ; due to stuck port clock_enable ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|alt_synch_pipe_lkd:ws_dgrp|dffpipe_kd9:dffpipe13|dffe15a[0], ;
-;                                                                                                                                                      ;                                ; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|counter7a[0]                     ;
-+------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                            ;
++--------------------------------------------------------------------------------------------------------------------------+--------------------+
+; Register name                                                                                                            ; Reason for Removal ;
++--------------------------------------------------------------------------------------------------------------------------+--------------------+
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_bwp|dffe12a[8]   ; Lost fanout        ;
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:ws_brp|dffe12a[8]   ; Lost fanout        ;
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_gd9:rs_bwp|dffe12a[7,8] ; Lost fanout        ;
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|dffpipe_oe9:rs_brp|dffe9a[8,9]  ; Lost fanout        ;
+; current_sta~4                                                                                                            ; Lost fanout        ;
+; current_sta~5                                                                                                            ; Lost fanout        ;
+; current_sta~6                                                                                                            ; Lost fanout        ;
+; current_sta~7                                                                                                            ; Lost fanout        ;
+; Total Number of Removed Registers = 10                                                                                   ;                    ;
++--------------------------------------------------------------------------------------------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -457,14 +374,27 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 20    ;
-; Number of registers using Synchronous Clear  ; 5     ;
+; Total registers                              ; 175   ;
+; Number of registers using Synchronous Clear  ; 21    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Clear ; 174   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 42    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                                 ;
++------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                  ; Fan out ;
++------------------------------------------------------------------------------------------------------------------------------------+---------+
+; uart:u_uart|tx_data                                                                                                                ; 3       ;
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|counter8a0    ; 6       ;
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_pjc:wrptr_g1p|parity9       ; 4       ;
+; fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|a_graycounter_s57:rdptr_g1p|sub_parity6a0 ; 1       ;
+; Total number of inverted registers = 4                                                                                             ;         ;
++------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -472,6 +402,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ADDA|uart:u_uart|data_buf[3]    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |ADDA|uart:u_uart|clk_cnt[2]     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ADDA|uart:u_uart|tim_cnt[1]     ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ADDA|next_sta.WRITECONTROL2_VAL ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
@@ -616,6 +549,18 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; COLLECT               ; 1100             ; Unsigned Binary           ;
 ; WAIT_DRDY             ; 1101             ; Unsigned Binary           ;
 +-----------------------+------------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart:u_uart ;
++----------------+----------+------------------------------+
+; Parameter Name ; Value    ; Type                         ;
++----------------+----------+------------------------------+
+; BAUD_RATE      ; 115200   ; Signed Integer               ;
+; CLK_FREQURENCE ; 12000000 ; Signed Integer               ;
+; BIT_CNT        ; 104      ; Signed Integer               ;
++----------------+----------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1046,24 +991,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                                                                    ;
 +---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-; rdreq   ; Input  ; Info     ; Stuck at GND                                                                                                               ;
-; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; rdempty ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
 ; rdfull  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
 ; rdusedw ; Output ; Warning  ; Output or bidir port (9 bits) is wider than the port expression (8 bits) it drives; bit(s) "rdusedw[8..8]" have no fanouts ;
-; rdusedw ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
 ; wrempty ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
-; wrusedw ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
+; wrfull  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
 +---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ip:u_pll"                                                                           ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; c1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -1081,53 +1013,50 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Feb 06 01:26:32 2020
+    Info: Processing started: Fri Feb 07 01:19:36 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ADDA -c ADDA
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgaprogramm/adda/rtl/uart.v
     Info (12023): Found entity 1: uart
-Warning (10229): Verilog HDL Expression warning at ADDA.v(37): truncated literal to match 4 bits
-Warning (10885): Verilog HDL Attribute warning at ADDA.v(49): synthesis attribute "noprune" with value "1" has no object and is ignored
+Warning (10229): Verilog HDL Expression warning at ADDA.v(38): truncated literal to match 4 bits
 Warning (10885): Verilog HDL Attribute warning at ADDA.v(50): synthesis attribute "noprune" with value "1" has no object and is ignored
 Warning (10885): Verilog HDL Attribute warning at ADDA.v(51): synthesis attribute "noprune" with value "1" has no object and is ignored
 Warning (10885): Verilog HDL Attribute warning at ADDA.v(52): synthesis attribute "noprune" with value "1" has no object and is ignored
+Warning (10885): Verilog HDL Attribute warning at ADDA.v(53): synthesis attribute "noprune" with value "1" has no object and is ignored
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgaprogramm/adda/rtl/adda.v
     Info (12023): Found entity 1: ADDA
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgaprogramm/adda/rtl/ip.v
     Info (12023): Found entity 1: ip
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgaprogramm/adda/rtl/fifo.v
     Info (12023): Found entity 1: fifo
-Warning (10236): Verilog HDL Implicit Net warning at ADDA.v(79): created implicit net for "uart_clk"
 Info (12127): Elaborating entity "ADDA" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ADDA.v(53): object "drdy_cnt" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at ADDA.v(55): object "contro_set_flg" assigned a value but never read
-Warning (10240): Verilog HDL Always Construct warning at ADDA.v(249): inferring latch(es) for variable "o_rest_n", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at ADDA.v(249): inferring latch(es) for variable "cs_n", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at ADDA.v(249): inferring latch(es) for variable "r_n_w", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at ADDA.v(249): inferring latch(es) for variable "adcdata", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at ADDA.v(249): inferring latch(es) for variable "wrreq", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at ADDA.v(249): inferring latch(es) for variable "rdreq", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "rdreq" at ADDA.v(249)
-Info (10041): Inferred latch for "wrreq" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[0]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[1]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[2]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[3]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[4]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[5]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[6]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[7]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[8]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[9]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[10]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[11]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[12]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[13]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[14]" at ADDA.v(249)
-Info (10041): Inferred latch for "adcdata[15]" at ADDA.v(249)
-Info (10041): Inferred latch for "r_n_w" at ADDA.v(249)
-Info (10041): Inferred latch for "cs_n" at ADDA.v(249)
-Info (10041): Inferred latch for "o_rest_n" at ADDA.v(249)
+Warning (10036): Verilog HDL or VHDL warning at ADDA.v(56): object "contro_set_flg" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ADDA.v(58): object "rdreq" assigned a value but never read
+Warning (10240): Verilog HDL Always Construct warning at ADDA.v(271): inferring latch(es) for variable "o_rest_n", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ADDA.v(271): inferring latch(es) for variable "cs_n", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ADDA.v(271): inferring latch(es) for variable "r_n_w", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at ADDA.v(271): inferring latch(es) for variable "adcdata", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "adcdata[0]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[1]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[2]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[3]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[4]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[5]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[6]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[7]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[8]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[9]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[10]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[11]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[12]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[13]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[14]" at ADDA.v(271)
+Info (10041): Inferred latch for "adcdata[15]" at ADDA.v(271)
+Info (10041): Inferred latch for "r_n_w" at ADDA.v(271)
+Info (10041): Inferred latch for "cs_n" at ADDA.v(271)
+Info (10041): Inferred latch for "o_rest_n" at ADDA.v(271)
+Info (12128): Elaborating entity "uart" for hierarchy "uart:u_uart"
+Warning (10230): Verilog HDL assignment warning at uart.v(52): truncated value with size 16 to match size of target (8)
 Info (12128): Elaborating entity "ip" for hierarchy "ip:u_pll"
 Info (12128): Elaborating entity "altpll" for hierarchy "ip:u_pll|altpll:altpll_component"
 Info (12130): Elaborated megafunction instantiation "ip:u_pll|altpll:altpll_component"
@@ -1254,44 +1183,51 @@ Info (12128): Elaborating entity "cmpr_n76" for hierarchy "fifo:u_fifo|dcfifo_mi
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_54e.tdf
     Info (12023): Found entity 1: cntr_54e
 Info (12128): Elaborating entity "cntr_54e" for hierarchy "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|cntr_54e:cntr_b"
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[0]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[1]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[2]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[3]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[4]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[5]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[6]"
-        Warning (14320): Synthesized away node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[7]"
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[7]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[15]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[5]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[13]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[4]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[12]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[3]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[11]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[6]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[14]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[0]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[8]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[1]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[9]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[2]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[10]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[2]" into an OR gate
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "adcdata[1]_430" merged with LATCH primitive "adcdata[0]_415"
-    Info (13026): Duplicate LATCH primitive "adcdata[2]_445" merged with LATCH primitive "adcdata[0]_415"
-    Info (13026): Duplicate LATCH primitive "adcdata[5]_490" merged with LATCH primitive "adcdata[0]_415"
+    Info (13026): Duplicate LATCH primitive "adcdata[2]_468" merged with LATCH primitive "adcdata[0]_438"
+    Info (13026): Duplicate LATCH primitive "adcdata[1]_453" merged with LATCH primitive "adcdata[0]_438"
+    Info (13026): Duplicate LATCH primitive "adcdata[5]_513" merged with LATCH primitive "adcdata[0]_438"
 Warning (13012): Latch r_n_w$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal current_sta.WAIT_DRDY
 Warning (13012): Latch o_rest_n$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal current_sta.WRESET1
-Warning (13012): Latch wrreq has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal current_sta.WAIT_DRDY
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 66 registers lost all their fanouts during netlist optimizations.
+Info (17049): 10 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file E:/FPGAProgramm/ADDA/par/output_files/ADDA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15899): PLL "ip:u_pll|altpll:altpll_component|ip_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected
-Info (21057): Implemented 95 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 347 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 3 output pins
+    Info (21059): Implemented 4 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 71 logic cells
+    Info (21061): Implemented 314 logic cells
+    Info (21064): Implemented 8 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 4686 megabytes
-    Info: Processing ended: Thu Feb 06 01:26:37 2020
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4685 megabytes
+    Info: Processing ended: Fri Feb 07 01:19:39 2020
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+

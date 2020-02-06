@@ -13,6 +13,7 @@ module ADDA(
 		output reg r_n_w,    //读写信号
 		output reg cs_n,      //片选使能信??
 		output reg o_rest_n,
+		output tx_data,
 		inout [15:0]adc_data//Modelsim里inout不能是reg只能是wire
 
 );
@@ -53,39 +54,63 @@ reg [4:0]time_cnt = 5'b0;/*synthesis noprune*/ //创建打拍子的综合计时�
 reg [2:0]drdy_cnt = 3'b0;
 reg [15:0]adcdata;
 reg [8:0]contro_set_flg = 9'd1;//多留一位用作初始状态
-reg wrreq;
-reg rdreq;
-
+reg wrreq = 1'b0;
+reg rdreq = 1'b0;
+/* WIRE Signal */
+//uart
+wire send_sta_flg;
+wire uart_en;
+wire uart_clk;//12MHz
+//FIFO
 wire [15:0]i_fifo;
 wire [7:0]o_fifo;
-wire wait_six_flg;
-wire mclk;
 wire rdempty,rdfull,wrempty,wrfull;
 wire [7:0]wrusedw;
 wire [7:0]rdusedw;
+//AD7760
+wire mclk;//10MHz
+wire wait_six_flg;
 
 
 //上电后就写寄存器，CLDVIV_N = 1；使ICLK = MCLK
 assign adc_data = (wrreq == 1'b1)?(16'bz):(adcdata);//读取数据时释放总线
 assign wait_six_flg = (time_cnt == 4'd6)?(1'b1):(1'b0);//只用一次
-assign i_fifo = ((wrreq == 1)&&(~wrfull))?(adc_data):(16'bz);//请求为1同时未写满，写满了FIFO恢复会复位全部置一
+assign i_fifo = ((wrreq == 1)&&(wrusedw != 8'd254))?(adc_data):(16'bz);//请求为1同时未写满，写满了FIFO恢复会复位全部置一
+assign uart_en = ((rdusedw != 8'd0)&&(send_sta_flg == 0))?(1'b1):(1'b0);//uart 发送模块提供一个上升沿，模块内部可以生成一个是周期的使能脉冲
+// uart_en 信号用作FIFO的读请求信号
+always@(negedge drdy_n)
+begin
+	if((current_sta == WAIT_DRDY) &&(wrusedw != 8'd254))
+		wrreq <= 1'b1;
+	else
+		wrreq <= 1'b0;
+end
 
-//针对信号的读取应该针对单独添加drdy_n敏感的always块,将时钟同步为50MHz的FIFO
+uart u_uart(
+    .paralle_data(o_fifo),
+    .sysclk_12(uart_clk),
+    .i_rest_n(i_rest_n),
+    .rdempty(rdempty),//读空呈高电平发送停止；//
+    .uart_en(uart_en),
+    .tx_data(tx_data),
+	.send_sta_flg(send_sta_flg)
+    
+);
 
 ip u_pll(
 	.inclk0(sysclk_50),
 	.areset(~i_rest_n),//高电平有效的复位信号
-	.c0(mclk),
-	.c1(uart_clk)
+	.c0(mclk),//10Mhz
+	.c1(uart_clk)//12MHz
 );
  
 
 fifo	u_fifo (
 	.aclr ( ~i_rest_n ),
 	.data ( i_fifo ),
-	.rdreq ( rdreq ),
-	.rdclk(sysclk_50),
-	.wrclk ( sysclk_50 ),
+	.rdreq ( uart_en ),
+	.rdclk(uart_clk),
+	.wrclk ( drdy_n ),//drdy_n信号用做写时钟//来一个信号写一个信号
 	.wrreq ( wrreq ),
 	.q ( o_fifo ),
 	.rdempty ( rdempty ),
@@ -98,12 +123,11 @@ fifo	u_fifo (
 
 initial
 begin
-wrreq = 1'b0;
+//wrreq = 1'b0;
 //adcdata = 16'b0;
 //current_sta = STATE0;
 //next_sta = WRESET1;
 end
-
 
 
 //上电的默认的时候 ICLK周期是MCLK的两倍，频率是一半
@@ -244,7 +268,7 @@ begin
 end	
 
 //第三段描各个状态的输出//drdy部分另外一个模块写
-always@(*)begin
+always@(current_sta or drdy_cnt)begin
 
 case(current_sta)
 	STATE0:
@@ -253,8 +277,8 @@ case(current_sta)
 			cs_n <= 1'b1;
 			r_n_w <= 1'b1;
 			adcdata <= 16'd0;
-			wrreq <= 1'b0;
-			rdreq <= 1'b0;
+			//wrreq <= 1'b0;
+			//rdreq <= 1'b0;
 		end
 	WRESET1:
 		o_rest_n <= 1'b0;
@@ -307,11 +331,12 @@ case(current_sta)
 	begin
 		cs_n <= 1'b0;
 		r_n_w <= 1'b0;//先拉低cs和读写信号，等待drdy信号号再读取输出数据
-		if (drdy_n == 1'b1) begin
+
+		/* if (drdy_n == 1'b1) begin
 			wrreq <= 1'b1;
 		end else begin
 			wrreq <= 1'b0;
-		end
+		end */
 
 	end
 

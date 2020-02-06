@@ -68,6 +68,6 @@ $display("simulation Run");
 end
 
 always #10 sysclk_50 <= ~sysclk_50;
-always #55 drdy_n <= ~drdy_n;
+always #50 drdy_n <= ~drdy_n;
                                                 
 endmodule
