@@ -40,20 +40,20 @@ wire cs_n;
 wire o_rest_n;
 wire r_n_w;
 wire wrreq;
-
+wire tx_data;
 // assign statements (if any)                          
 assign adc_data = treg_adcdata;
 ADDA i1 (
 // port map - connection between master ports and signals/registers   
-	.adc_data(adc_data),
-	.command(command),
-	.cs_n(cs_n),
-	.drdy_n(drdy_n),
+	.sysclk_50(sysclk_50),
 	.i_rest_n(i_rest_n),
+	.command(command),
+	.drdy_n(drdy_n),
 	.o_rest_n(o_rest_n),
 	.r_n_w(r_n_w),
-	.sysclk_50(sysclk_50)
-	
+	.cs_n(cs_n),
+	.adc_data(adc_data),
+	.tx_data(tx_data)
 );
 
 

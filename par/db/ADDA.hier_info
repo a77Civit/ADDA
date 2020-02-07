@@ -2,7 +2,7 @@
 sysclk_50 => sysclk_50.IN1
 drdy_n => drdy_n.IN1
 command => always2.IN1
-command => Selector17.IN3
+command => Selector16.IN3
 command => next_sta.DATAB
 i_rest_n => i_rest_n.IN1
 r_n_w <= r_n_w$latch.DB_MAX_OUTPUT_PORT_TYPE

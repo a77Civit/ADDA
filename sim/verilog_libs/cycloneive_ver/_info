@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dE:/FPGAProgramm/ADDA/sim
 vcycloneive_and1
-Z1 !s110 1580991307
+Z1 !s110 1581069117
 !i10b 1
 !s100 oT]7FkABD[F088N@X^z8]0
 Iim::ZQ@lVEkHa[DVB22FX3
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1580991307.273000
+Z7 !s108 1581069117.216000
 Z8 !s107 d:/altera/13.1standard/quartus/eda/sim_lib/cycloneive_atoms.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|cycloneive_ver|d:/altera/13.1standard/quartus/eda/sim_lib/cycloneive_atoms.v|
 !i113 0

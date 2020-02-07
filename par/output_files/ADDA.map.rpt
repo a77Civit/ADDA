@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ADDA
-Fri Feb 07 01:19:39 2020
+Fri Feb 07 17:50:44 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -67,13 +67,13 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Feb 07 01:19:39 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 07 17:50:43 2020       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; ADDA                                        ;
 ; Top-level Entity Name              ; ADDA                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 304                                         ;
-;     Total combinational functions  ; 238                                         ;
+; Total logic elements               ; 305                                         ;
+;     Total combinational functions  ; 239                                         ;
 ;     Dedicated logic registers      ; 175                                         ;
 ; Total registers                    ; 175                                         ;
 ; Total pins                         ; 24                                          ;
@@ -228,16 +228,16 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 304            ;
+; Estimated Total logic elements              ; 305            ;
 ;                                             ;                ;
-; Total combinational functions               ; 238            ;
+; Total combinational functions               ; 239            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 105            ;
-;     -- 3 input functions                    ; 75             ;
-;     -- <=2 input functions                  ; 58             ;
+;     -- 4 input functions                    ; 90             ;
+;     -- 3 input functions                    ; 73             ;
+;     -- <=2 input functions                  ; 76             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 204            ;
+;     -- normal mode                          ; 205            ;
 ;     -- arithmetic mode                      ; 34             ;
 ;                                             ;                ;
 ; Total registers                             ; 175            ;
@@ -252,8 +252,8 @@ applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; i_rest_n~input ;
 ; Maximum fan-out                             ; 194            ;
-; Total fan-out                               ; 1599           ;
-; Average fan-out                             ; 3.29           ;
+; Total fan-out                               ; 1569           ;
+; Average fan-out                             ; 3.22           ;
 +---------------------------------------------+----------------+
 
 
@@ -262,7 +262,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                             ; Library Name ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |ADDA                                                     ; 238 (91)          ; 175 (21)     ; 4096        ; 0            ; 0       ; 0         ; 24   ; 0            ; |ADDA                                                                                                                                           ; work         ;
+; |ADDA                                                     ; 239 (93)          ; 175 (21)     ; 4096        ; 0            ; 0       ; 0         ; 24   ; 0            ; |ADDA                                                                                                                                           ; work         ;
 ;    |fifo:u_fifo|                                          ; 98 (0)            ; 122 (0)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo                                                                                                                               ; work         ;
 ;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 98 (0)            ; 122 (0)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
 ;          |dcfifo_t7n1:auto_generated|                     ; 98 (23)           ; 122 (28)     ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated                                                  ; work         ;
@@ -287,7 +287,7 @@ applicable agreement for further details.
 ;    |ip:u_pll|                                             ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll                                                                                                                                  ; work         ;
 ;       |altpll:altpll_component|                           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll|altpll:altpll_component                                                                                                          ; work         ;
 ;          |ip_altpll:auto_generated|                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|ip:u_pll|altpll:altpll_component|ip_altpll:auto_generated                                                                                 ; work         ;
-;    |uart:u_uart|                                          ; 49 (49)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|uart:u_uart                                                                                                                               ; work         ;
+;    |uart:u_uart|                                          ; 48 (48)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ADDA|uart:u_uart                                                                                                                               ; work         ;
 +-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -341,12 +341,12 @@ Encoding Type:  One-Hot
 ; cs_n$latch                                          ; cs_n                ; yes                    ;
 ; o_rest_n$latch                                      ; WideOr12            ; yes                    ;
 ; adcdata[0]~1                                        ; WideOr18            ; yes                    ;
-; adcdata[0]_438                                      ; WideOr18            ; yes                    ;
+; adcdata[0]_430                                      ; WideOr18            ; yes                    ;
 ; adcdata[1]~0                                        ; WideOr18            ; yes                    ;
-; adcdata[1]_453                                      ; WideOr18            ; yes                    ;
-; adcdata[2]_468                                      ; WideOr18            ; yes                    ;
+; adcdata[1]_445                                      ; WideOr18            ; yes                    ;
+; adcdata[3]_475                                      ; WideOr18            ; yes                    ;
 ; adcdata[5]                                          ; WideOr18            ; yes                    ;
-; adcdata[5]_513                                      ; WideOr18            ; yes                    ;
+; adcdata[5]_505                                      ; WideOr18            ; yes                    ;
 ; Number of user-specified and inferred latches = 10  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -557,9 +557,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+----------+------------------------------+
 ; Parameter Name ; Value    ; Type                         ;
 +----------------+----------+------------------------------+
-; BAUD_RATE      ; 115200   ; Signed Integer               ;
+; BAUD_RATE      ; 1382400  ; Signed Integer               ;
 ; CLK_FREQURENCE ; 12000000 ; Signed Integer               ;
-; BIT_CNT        ; 104      ; Signed Integer               ;
+; BIT_CNT        ; 8        ; Signed Integer               ;
 +----------------+----------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1003,7 +1003,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1013,7 +1013,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Feb 07 01:19:36 2020
+    Info: Processing started: Fri Feb 07 17:50:39 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ADDA -c ADDA
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /fpgaprogramm/adda/rtl/uart.v
@@ -1056,7 +1056,7 @@ Info (10041): Inferred latch for "r_n_w" at ADDA.v(271)
 Info (10041): Inferred latch for "cs_n" at ADDA.v(271)
 Info (10041): Inferred latch for "o_rest_n" at ADDA.v(271)
 Info (12128): Elaborating entity "uart" for hierarchy "uart:u_uart"
-Warning (10230): Verilog HDL assignment warning at uart.v(52): truncated value with size 16 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at uart.v(58): truncated value with size 16 to match size of target (8)
 Info (12128): Elaborating entity "ip" for hierarchy "ip:u_pll"
 Info (12128): Elaborating entity "altpll" for hierarchy "ip:u_pll|altpll:altpll_component"
 Info (12130): Elaborated megafunction instantiation "ip:u_pll|altpll:altpll_component"
@@ -1202,32 +1202,34 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[2]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[2]" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "i_fifo[10]" to the node "fifo:u_fifo|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_t7n1:auto_generated|altsyncram_ei31:fifo_ram|q_b[2]" into an OR gate
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "adcdata[2]_468" merged with LATCH primitive "adcdata[0]_438"
-    Info (13026): Duplicate LATCH primitive "adcdata[1]_453" merged with LATCH primitive "adcdata[0]_438"
-    Info (13026): Duplicate LATCH primitive "adcdata[5]_513" merged with LATCH primitive "adcdata[0]_438"
+    Info (13026): Duplicate LATCH primitive "adcdata[1]_445" merged with LATCH primitive "adcdata[0]_430"
+    Info (13026): Duplicate LATCH primitive "adcdata[3]_475" merged with LATCH primitive "adcdata[0]_430"
+    Info (13026): Duplicate LATCH primitive "adcdata[5]_505" merged with LATCH primitive "adcdata[0]_430"
 Warning (13012): Latch r_n_w$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal current_sta.WAIT_DRDY
 Warning (13012): Latch o_rest_n$latch has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal current_sta.WRESET1
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register uart:u_uart|tx_data will power up to High
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 10 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file E:/FPGAProgramm/ADDA/par/output_files/ADDA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 347 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 348 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 4 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 314 logic cells
+    Info (21061): Implemented 315 logic cells
     Info (21064): Implemented 8 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 34 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
     Info: Peak virtual memory: 4685 megabytes
-    Info: Processing ended: Fri Feb 07 01:19:39 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Fri Feb 07 17:50:44 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +------------------------------------------+

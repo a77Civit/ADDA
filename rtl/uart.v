@@ -15,7 +15,7 @@ module uart(
     output reg send_sta_flg//发送状态标志位
     
 );
-parameter BAUD_RATE = 115200;//默认115200可以传参数改变
+parameter BAUD_RATE = 1382400;//默认115200可以传参数改变
 parameter CLK_FREQURENCE = 12000000;//50MHz输入时钟
 parameter BIT_CNT = CLK_FREQURENCE/BAUD_RATE;//计算每位信号发送需要的计数次数
 
@@ -25,6 +25,12 @@ reg [7:0]data_buf;
 reg [3:0]tim_cnt;
 reg [15:0]clk_cnt;
 reg uart_en_d0,uart_en_d1;
+
+initial 
+begin
+    tx_data = 1'b0;
+    send_sta_flg = 1'b0;
+end
 
 //捕获使能信号的上升沿，配合下面的延迟两个周期
 //制造了一个时钟周期的

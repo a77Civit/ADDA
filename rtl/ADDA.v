@@ -80,7 +80,7 @@ assign uart_en = ((rdusedw != 8'd0)&&(send_sta_flg == 0))?(1'b1):(1'b0);//uart �
 // uart_en 信号用作FIFO的读请求信号
 always@(negedge drdy_n)
 begin
-	if((current_sta == WAIT_DRDY) &&(wrusedw != 8'd254))
+	if((current_sta == WAIT_DRDY) &&(wrusedw < 8'd253))
 		wrreq <= 1'b1;
 	else
 		wrreq <= 1'b0;

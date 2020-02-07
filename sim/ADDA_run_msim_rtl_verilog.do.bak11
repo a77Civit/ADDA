@@ -33,6 +33,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/uart.v}
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/ADDA.v}
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/ip.v}
 vlog -vlog01compat -work work +incdir+E:/FPGAProgramm/ADDA/rtl {E:/FPGAProgramm/ADDA/rtl/fifo.v}

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dE:/FPGAProgramm/ADDA/sim
 va_graycounter
-Z1 !s110 1580991305
+Z1 !s110 1581069115
 !i10b 1
 !s100 FI?[k<oCFi9HWYigXHGcf0
 IlXZcogPGf5n@AnB9kWYd81
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1580991304.850000
+Z7 !s108 1581069114.737000
 Z8 !s107 d:/altera/13.1standard/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|d:/altera/13.1standard/quartus/eda/sim_lib/altera_mf.v|
 !i113 0
@@ -329,7 +329,7 @@ R9
 !i113 0
 R10
 vALTERA_DEVICE_FAMILIES
-Z11 !s110 1580991304
+Z11 !s110 1581069114
 !i10b 1
 !s100 FhER4>?CTY2IImAQ`W5mU3
 I2TVBM3Ll[MHdM<zG4g3V90
@@ -712,7 +712,7 @@ R9
 !i113 0
 R10
 varm_m_cntr
-R1
+R11
 !i10b 1
 !s100 UefMf4^kW017KKcRl5mSj2
 I>nezJgn@e`bP;I]g@N`_W2
@@ -732,7 +732,7 @@ R9
 !i113 0
 R10
 varm_n_cntr
-R1
+R11
 !i10b 1
 !s100 2BOE3zVZ6LT4M>O2K]EBL0
 I^W3c12O]HoZlN`McfAg6O0
@@ -752,7 +752,7 @@ R9
 !i113 0
 R10
 varm_scale_cntr
-R1
+R11
 !i10b 1
 !s100 IU4XOW;kV@NGTcJKA1<0D2
 ITV07TS`W=kE^NH>B2aNnB2
@@ -1217,7 +1217,7 @@ R9
 R10
 n@m@f_cycloneiiigl_scale_cntr
 vMF_pll_reg
-R1
+R11
 !i10b 1
 !s100 ^4iLbBGC<PMVITDcHe]@T1
 IkIf^=De;aVNUa1oG5`L;@0
@@ -1238,7 +1238,7 @@ R9
 R10
 n@m@f_pll_reg
 vMF_stratix_pll
-R1
+R11
 !i10b 1
 !s100 jIS[[?fJzEh;VGLPeoi=40
 IX8mK1T8ioK_3LA8^E]`Ui3
@@ -1259,7 +1259,7 @@ R9
 R10
 n@m@f_stratix_pll
 vMF_stratixii_pll
-R1
+R11
 !i10b 1
 !s100 =0gX3F_dei2=AS]UR>1Mz3
 IXjodRTn@Z0k_ReDP1da`l3
@@ -1621,7 +1621,7 @@ R9
 !i113 0
 R10
 vstx_m_cntr
-R1
+R11
 !i10b 1
 !s100 ]mNcUEi9b=oUDaFoRJMm02
 Inm<<i^Bdnz3Pj0>]lS_9N1
@@ -1641,7 +1641,7 @@ R9
 !i113 0
 R10
 vstx_n_cntr
-R1
+R11
 !i10b 1
 !s100 @Ah4lKEZ1Rd1UC4=5B;h`2
 IU?JU[7HD2i9fMHQU`4PiB3
@@ -1661,7 +1661,7 @@ R9
 !i113 0
 R10
 vstx_scale_cntr
-R1
+R11
 !i10b 1
 !s100 ;e]RgmVkGETcOb:XlC3O:1
 ID>LTIS_h1ndWdiV]P:2NA2
@@ -1681,7 +1681,7 @@ R9
 !i113 0
 R10
 vttn_m_cntr
-R1
+R11
 !i10b 1
 !s100 2OmWMI8G<WFToI_I9jC3M2
 IMWRzC7U81Ak1zo4Kz<JW=3
